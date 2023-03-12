@@ -2,24 +2,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  
-  <nav class="navbar navbar-expand-xl navbar-light">
-    <!-- Rest of the code -->
 
   <nav class="navbar navbar-expand-xl navbar-light">
 
+    <!-- logo -->
     <a class="navbar-brand" href="{{ '/' | relative_url }}">
       <div class="nav-logo">
         <img src="./assets/img/alyssaLogo.png" alt="{{ site.title }}" />
       </div>
     </a>
 
+    <!-- burger icon for smaller screens -->
     <button class="navbar-toggler navbar-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav ml-auto">
+    <!-- navigation links -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+      <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
         </li>
@@ -41,11 +41,12 @@
       </ul>
     </div>
 
+    <!-- toggle button for dark mode -->
     <div class="switch">
       <input type="checkbox" class="switch__input ml-5 mt-5" id="Switch">
       <label class="switch__label" for="Switch">
-          <span class="switch__indicator"></span>
-          <span class="switch__decoration"></span>
+        <span class="switch__indicator"></span>
+        <span class="switch__decoration"></span>
       </label>
     </div>
 
